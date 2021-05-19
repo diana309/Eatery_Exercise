@@ -1,0 +1,455 @@
+body{
+    margin: 0rem;
+    font-family: "Spectral"  sans-serif;  
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+header, .child-wrapper{
+    padding: 1.5rem;
+}
+
+[src*="logo"]{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul{
+    padding:0;
+    margin: 0;
+}
+
+.menu-button{
+   text-transform: uppercase;
+   border-radius: 0%;
+   background-color: black;
+   color: white;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 1rem;
+}
+
+.toggle-menu nav ul li a {
+    text-decoration: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    color:black;
+}
+.toggle-menu nav ul li a:hover{
+    background-color:rgb(255,105,180);
+    color:white; 
+    vertical-align: center;
+}
+
+.toggle-menu nav ul li{
+    display: grid;
+    text-align: center;
+    grid-template-rows: (4, 1fr);
+}
+
+#icons-nav-top li a{
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    /* padding-bottom: 2rem; */
+    font-size: 1.2rem;
+    color:black;
+    text-align: center;
+}
+
+#icons-nav-top li {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    justify-content: center;
+}
+
+#icons-nav-top ul{
+    display: grid;
+    justify-content: center;
+}
+
+
+h2{
+    background-color: rgb(255,105,180);
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    font-family: "Spectral sc";
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+
+
+/* cover img */
+
+#breakfast{
+    background-image: url(images/breakfast.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+}
+
+#lunch{
+    background-image: url(images/lunch.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+}
+
+#dinner{
+    background-image: url(images/dinner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+}
+
+.child-sections-wrapper{
+    background-color: rgba(0, 0, 0,.7);
+    color: white;
+    margin-top: 1rem;
+}
+
+caption{
+    text-align: left;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.child-section td{
+    font-size: 1rem;
+    padding: 1rem 1rem 0.5rem 1rem; 
+}
+
+.child-section tr::after{
+    content: " ";
+    border-top: 8px solid rgba(232, 229, 229, 0.131) ;
+    margin-left:1rem;
+    margin-right:1rem;
+    display: grid;
+    grid-column: span 2;
+}
+
+table{
+    display: grid;
+}
+
+table tr:first-child{
+    text-align: left;
+}
+
+ tr td:last-child{
+    text-align: right;
+   
+}
+table tr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+tbody {
+    display: grid;
+  
+}
+
+/* staff */
+
+#staff{
+    background-image: linear-gradient(black, indigo, black);
+    color: white; 
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: grid;
+}
+
+#staff img{
+    border-radius: 50% 50% 0px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: black;
+    padding-bottom: 4rem;
+}
+
+.inner-wrapper {
+    background-color:linear-gradient(
+      to bottom,
+      white 50%,
+      black 50%
+      );
+    display: grid;
+    z-index: 100;
+    position: absolute;
+    color: white;
+   
+    left: 0;
+    right:0;
+    bottom: 0;
+    margin:0;
+
+}
+
+.staff-member{
+    position:relative;
+    display: grid;
+
+}
+
+
+
+
+/* contact */
+
+#contact{
+    text-align: center;
+    background-color: #eeeeff;
+    padding: 1.5rem;
+}
+
+#contact h4{
+    font-size: 1.5rem;
+    font-family: "Spectral sc";
+    margin: 0;
+    font-weight: bold;
+}
+
+#contact p:first-of-type{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/* ICONS NAV */
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?v647da');
+    src:  url('fonts/icomoon.eot?v647da#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?v647da') format('truetype'),
+      url('fonts/icomoon.woff?v647da') format('woff'),
+      url('fonts/icomoon.svg?v647da#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  a[href$="#"], footer nav ul li a {
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 1.5rem 0.8rem 1.5rem 0.8rem;
+  }
+  
+  a[class$="facebook"]:before {
+    content: "\ea91";
+  }
+
+  a[class$="google"]:before {
+    content: "\ea8d";
+  }
+
+  a[class$="trip"]:before {
+    content: "\e900";
+  }
+
+  a[class*="icons-nav"]:hover{
+      background-color:  rgb(255,105,180);
+      
+      
+  }
+  #icons-nav-top li a:hover{
+    color: white;
+  }
+
+  footer{
+      background-color: black;   
+  }
+
+  footer nav ul li{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      
+  }
+
+  footer nav ul li a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+  }
+
+footer a[href^="#"]:before{
+    content: "\e901";
+    display: grid;
+    text-align: center;
+    
+  }
+
+footer a[href^="tel"]:before{
+    content: "\e903";  
+    display: grid;
+    transform: scaleX(-1);
+}
+footer nav li a:not(a:last-child){
+    border-right: 1.5px solid grey;
+   
+}
+.child-section{
+    padding-bottom: 1.5rem;
+}
+
+
+/* Medium Screen */
+
+@media screen and (min-width: 750px){
+
+    .menu-button{
+        display: none;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 1rem;
+    }
+
+    .toggle-menu{
+        display: grid;
+        align-items: center;
+    }
+
+    .toggle-menu nav ul li{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        list-style: none;
+        /* justify-content: center; */
+        align-content: center;
+    }
+    h1, header img{
+        margin: 0;
+    }
+    .toggle-menu nav{
+        max-width: 400px;
+        margin-left: auto;
+    }
+    #icons-nav-top ul {
+        
+        justify-content: right;
+    }
+
+    #icons-nav-top li a{
+    margin-right: 0;
+    }
+
+    /* menu */
+
+    .child-wrapper{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .child-sections-wrapper{
+        display: grid;
+        grid-gap: 1rem;
+        
+        grid-template-columns: 1fr 1fr;
+    }
+    .child-section{
+        background-color: rgba(0, 0, 0,.7);
+   
+
+    }
+    .child-sections-wrapper{
+    background-color: rgba(0, 0, 0, 0);
+    }
+
+    .drinks{
+        padding-bottom: 5rem;
+    }
+
+    .sides-and-drinks-wrapper{
+        display: grid;
+    }
+
+    #breakfast, #lunch, #dinner{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+  
+
+
+h2{
+    align-self: center;
+}
+
+/* staff */
+
+#staff{
+    background-image: linear-gradient( to right, black, indigo, black);
+}
+
+
+footer{
+    display: none;
+}
+
+   #staff{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-gap: 1rem;
+       padding: 4rem;
+   }
+
+}
+
+/* Big Screen */
+
+@media screen and (min-width: 1000px){
+
+    header{
+        padding-left: 6rem;
+        padding-right: 6rem;
+        margin: auto;
+    }
+
+    .toggle-menu{
+        grid-template-columns: 1fr 1fr;;
+    }
+
+    .child-wrapper{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    #staff{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+}
